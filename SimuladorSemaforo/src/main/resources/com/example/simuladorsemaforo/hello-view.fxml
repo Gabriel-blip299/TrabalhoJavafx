@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.simuladorsemaforo.HelloController">
+
+    <Label text="Simulador de Semáforo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <!-- Círculos do Semáforo -->
+    <VBox spacing="10" alignment="CENTER">
+        <Circle fx:id="circleVermelho" radius="30" fill="gray"/>
+        <Circle fx:id="circleAmarelo" radius="30" fill="gray"/>
+        <Circle fx:id="circleVerde" radius="30" fill="gray"/>
+    </VBox>
+
+    <!-- Botões -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnIniciar" text="Iniciar" onAction="#iniciar"/>
+        <Button fx:id="btnParar" text="Parar" onAction="#parar"/>
+    </HBox>
+</VBox>
