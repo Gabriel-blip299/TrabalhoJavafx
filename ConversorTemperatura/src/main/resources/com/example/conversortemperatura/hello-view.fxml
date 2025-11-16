@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.conversortemperatura.HelloController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <children>
+        <TextField fx:id="txtValor" promptText="Digite a temperatura"/>
+
+        <Button fx:id="btnParaF" text="Converter para °F"/>
+        <Button fx:id="btnParaC" text="Converter para °C"/>
+
+        <Label fx:id="lblResultado" text="Resultado:"/>
+    </children>
+</VBox>
