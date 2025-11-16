@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableView?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.cadastrosimples.HelloController">
+    <Label text="Cadastro de Alunos" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <!-- Campos de Entrada -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Nome:"/>
+        <TextField fx:id="txtNome" prefWidth="150"/>
+        <Label text="Idade:"/>
+        <TextField fx:id="txtIdade" prefWidth="50"/>
+        <Label text="Curso:"/>
+        <ComboBox fx:id="cbCurso" prefWidth="150"/>
+    </HBox>
+
+    <!-- Botões -->
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Adicionar" onAction="#adicionarAluno"/>
+        <Button text="Excluir" onAction="#excluirAluno"/>
+    </HBox>
+
+    <!-- Tabela -->
+    <TableView fx:id="tabelaAlunos" prefHeight="300" prefWidth="500">
+        <columns>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="200"/>
+            <TableColumn fx:id="colIdade" text="Idade" prefWidth="100"/>
+            <TableColumn fx:id="colCurso" text="Curso" prefWidth="200"/>
+        </columns>
+    </TableView>
+</VBox>
