@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="327.0" prefWidth="292.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atividadecleitonjfx.HelloController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <children>
+        <TextField fx:id="txtNum1" promptText="Digite o primeiro número" />
+        <TextField fx:id="txtNum2" promptText="Digite o segundo número" />
+
+        <Button fx:id="btnSoma" text="+" />
+        <Button fx:id="btnSub" text="-" />
+        <Button fx:id="btnMult" text="×" />
+        <Button fx:id="btnDiv" prefHeight="25.0" prefWidth="28.0" text="÷" />
+
+        <Label fx:id="lblResultado" text="Resultado:" />
+    </children>
+
+</VBox>
